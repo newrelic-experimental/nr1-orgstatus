@@ -1,0 +1,7 @@
+{
+    "schemaType": "LAUNCHER",
+    "id": "orgstatus-launcher",
+    "displayName": "System Status",
+    "description": "View Organization Workloads System Status",
+    "rootNerdletId": "orgstatus-nerdlet"
+}

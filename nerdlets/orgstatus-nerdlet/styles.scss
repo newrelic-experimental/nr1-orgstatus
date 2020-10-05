@@ -1,0 +1,398 @@
+//Custom fonts
+@import url('https://fonts.googleapis.com/css?family=Roboto|Rubik&display=swap');
+
+
+$main_font: "Rubik", sans-serif;
+$title_font: "Roboto", sans-serif;
+$panel_header_font: $main_font;
+
+//Dark mode--------------
+
+//$background_color: black;           //main background color
+//$text_color: white;                 //main title colors
+//$rule_color: #70CDD3;               //title horizontal rule color
+//$config_loader_text_color: grey;    //loading text color
+//$page_link_color: #7b7979;          //page link nav color
+//$history_label: grey;               //label text hostory color
+//
+//$widget_bg: #272727;                //background color of widget block
+//$widget_loading_color: grey;        //loading text color
+//$widget_header_bg: #3D8C99;         //background color of widget heading
+//$widget_header_fg: #fff;            //text color of widget heading
+//$widget_value_suffix_color: grey;   //text colour of value suffix
+//$widget_extra_infor_color: #acacac; //text colour of extra info text
+//
+//$history_block_critical: #ca0000;   //critical block
+//$history_block_warning: #eb8e03;    //warning block
+//$history_block_normal: #1f863a;     //normal block
+//$history_block_nodata: #000000;     //no data block
+//
+//$widget_header_bg_critical: #ca0000;    //header background color
+//$widget_header_fg_critical: white;  //header text color
+//$glow_critical_start: #490707;      //widget background glow start color
+//$glow_critical_end: #880c0c;        //widget background glow end color (set same as start for no glow)
+//
+//$widget_header_bg_warning: #eb8e03; //same as above
+//$widget_header_fg_warning: white;
+//$glow_warning_start: #30220e;
+//$glow_warning_end: #5e421a;
+
+
+//light mode------------
+
+ $background_color: white;           //main background color
+ $text_color: #535353;                 //main title colors
+ $rule_color: #D82128;               //title horizontal rule color
+ $config_loader_text_color: grey;    //loading text color
+ $page_link_color: #7b7979;          //page link nav color
+ $history_label: grey;               //label text hostory color
+
+ $widget_bg: #f3f3f3;                //background color of widget block
+ //$widget_bg: #00464f;
+ $widget_loading_color: grey;        //loading text color
+ $widget_header_bg: #ebebeb;         //background color of widget heading
+ $widget_header_fg: #1f863a;            //text color of widget heading
+ $widget_value_suffix_color: grey;   //text colour of value suffix
+ $widget_extra_infor_color: #acacac; //text colour of extra info text
+
+ $history_block_critical: #ff0000;   //critical block
+ $history_block_warning: #ff9900;    //warning block
+ $history_block_normal: #1f863a;     //normal block
+ $history_block_nodata: #bfbfbf;     //normal block
+
+ $widget_header_bg_critical: #D82128;    //header background color
+ $widget_header_fg_critical: white;  //header text color
+ $glow_critical_start: #ffd2cb;      //widget background glow start color
+ $glow_critical_end: #f3f3f3;        //widget background glow end color (set same as start for no glow)
+
+ $widget_header_bg_warning: #ff9900; //same as above
+ $widget_header_fg_warning: white;
+ $glow_warning_start: #f8d7a9;
+ $glow_warning_end: #f3f3f3;
+
+
+// Example for a custom font from woff
+
+// @font-face {
+//     font-family: CustomFont;
+//     src: url('https://www.someurl.com/font.woff2');
+// }
+// @font-face {
+//     font-family: CustomFont;
+//     src: url('https://www.someurl.com/font-bold.woff2');
+//     font-weight: bold;
+// }
+// $main_font: "CustomFont", sans-serif;
+// $title_font: "CustomFont", sans-serif;
+
+.initialMessage {
+  margin: auto;
+  width: 50%;
+}
+
+.clear { clear:both;}
+.headerContainer {
+  background-color: $background_color;
+  min-width: 100%;
+  min-height: 10%;
+  color: $text_color;
+  font-family: $main_font;
+
+  h1,h2,h3 {
+    margin: 0;
+  }
+  .LogoHeader {
+    height: 3vw;
+    padding: 1vw;
+    .DashboardTitle {
+      font-family: $title_font;
+      font-size: 2vw;
+      padding-left: 4vw;
+      padding-right: 4vw;
+      height: 3vw;
+      line-height: 3vw;
+      float:left;
+      background-color:#346094;
+      color:#fff;
+      width:70%;
+      text-align: center;
+    }
+    .DashboardLogo {
+      height:4vw;
+      float:left;
+
+    }
+    .NRLogo {
+      float:right;
+      height:3vw;
+
+    }
+    .NRLogoImg {
+      height:3vw;
+    }
+}
+
+.OuterContainer {
+  background-color: $background_color;
+  min-width: 100%;
+  min-height: 90%;
+  color: $text_color;
+  font-family: $main_font;
+  }
+
+  .ConfigLoader {
+    clear: both;
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    font-size: 1vw;
+    margin-top: 10vw;
+    color: $config_loader_text_color;
+  }
+
+  .GridContainer {
+    clear:both;
+    margin-top:1vw;
+    padding-top:2vw;
+    margin-bottom:2vw;
+    .GridGroup {
+      width: 45%;
+      float:left;
+      margin-left: 3vw;
+    }
+    h1 {
+      width: 100%;
+      text-align:center;
+      font-family: $title_font;
+      font-size: 1.5vw;
+    }
+    hr {
+      margin-top: 0.5vw;
+      border: solid 2px $rule_color;
+    }
+    .groupSeperator {
+      clear:both;
+      padding-top:3vw;
+    }
+
+  }
+  .configureButton {
+    clear:both;
+    margin-top:2vw;
+    margin-left: 1vw;
+  }
+
+}
+.workloadHeader {
+  border: solid black 0.5px;
+  height: 2vw;
+  background-color: $widget_bg;
+}
+
+.Button {
+  vertical-align: top;
+}
+.configModal {
+  width: 400vw;
+}
+.parentGrid {
+  height: 12vw;
+}
+.configGrid {
+  width: 160vw;
+}
+.addParentGrid {
+  width: 80vw;
+}
+.workloadConfigGrid {
+  width: 80vw;
+}
+.addParentMessage {
+  width: 80vw;
+  text-align: center;
+  background: beige;
+  padding: 1vw;
+}
+.workloadName {
+  height: 8vw;
+  width: 60vw;
+  text-align: center;
+  background: beige;
+}
+.workloadAction {
+  height: 8vw;
+  width: 20vw;
+  text-align: left;
+  background: beige;
+}
+.parentName {
+  font-size: 15px;
+}
+.configMessage {
+  background: beige;
+}
+.tabs {
+  border: solid cornflowerblue 1px;
+  background-color: lightslategray;
+}
+
+.tabsItem {
+  border: solid cornflowerblue 1px;
+  font: 14px bold;
+}
+
+.tabsItemPlus {
+  border: solid cornflowerblue 1px;
+  font: 20px bold;
+}
+
+.workloadDiv {
+  border: solid $background_color 1px;
+  height: 4vw;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+  background-color: $widget_bg;
+  position:relative;
+}
+
+.workloadButtons {
+  border: solid $background_color 0.5px;
+  height: 1vw;
+  vertical-align: top;
+  background-color: $widget_bg;
+  position:relative;
+}
+
+.StatusBlock {
+  border: solid $background_color 1px;
+  height: 2vw;
+  background-color: $widget_bg;
+  position:relative;
+  h2 {
+    font-family: $panel_header_font;
+    background-color: $widget_header_bg;
+    color: $widget_header_fg;
+    font-size: 0.5vw;
+    padding: 0.1vw;
+    padding-left:0.5em;
+    font-weight: bold;
+  }
+}
+
+
+
+.workloadStatus {
+  border: solid $background_color 1px;
+  height: 2vw;
+  background-color: $widget_bg;
+  position:relative;
+  h2 {
+    font-family: $panel_header_font;
+    background-color: lightgray;
+    color: black;
+    font-size: 0.8vw;
+    padding: 0.1vw;
+    padding-left:0.5em;
+    font-weight: bold;
+  }
+}
+
+.DISRUPTED {
+  h2 {
+    background-color: orangered;
+    color: white;
+  }
+}
+.StatusBlock-OPERATIONAL {
+  border: solid green 1px;
+  height: 1.5vw;
+  background: beige;
+  position:relative;
+  h2 {
+    font-family: $panel_header_font;
+    background-color: green;
+    color: white;
+    font-size: 0.8vw;
+    padding: 0.1vw;
+    padding-left:0.5em;
+    font-weight: bold;
+    width: 90%;
+    horiz-align: center;
+  }
+}
+.StatusBlock-DEGRADED {
+  border: solid orangered 1px;
+  height: 1.5vw;
+  background: beige;
+  position:relative;
+  h2 {
+    font-family: $panel_header_font;
+    background-color: orangered;
+    color: white;
+    font-size: 0.8vw;
+    padding: 0.1vw;
+    padding-left:0.5em;
+    font-weight: bold;
+    width: 90%;
+    horiz-align: center;
+  }
+}
+.StatusBlock-DISRUPTED {
+  border: solid darkred 1px;
+  height: 1.5vw;
+  background: beige;
+  position:relative;
+  h2 {
+    font-family: $panel_header_font;
+    background-color: darkred;
+    color: white;
+    font-size: 0.8vw;
+    padding: 0.1vw;
+    padding-left:0.5em;
+    font-weight: bold;
+    width: 90%;
+    horiz-align: center;
+  }
+}
+.StatusBlock-UNKNOWN {
+  border: solid gray 1px;
+  height: 1.5vw;
+  background: beige;
+  position:relative;
+  h2 {
+    font-family: $panel_header_font;
+    background-color: lightgray;
+    color: black;
+    font-size: 0.8vw;
+    padding: 0.1vw;
+    padding-left:0.5em;
+    font-weight: bold;
+    width: 90%;
+    horiz-align: center;
+  }
+}
+
+.StatusBlock-BUTTONS {
+  border: solid gray 0.25px;
+  height: 1.25vw;
+  background: beige;
+  vertical-align: top;
+  position:relative;
+  padding-top: 0.5px;
+
+}
+
+.configContainer label {
+  color: #2d8ba7;
+  font-size: 1.2em;
+}
+
+.configContainer .field-description {
+  color: #717171;
+}
+
+.configButton {
+  background-color: $widget_bg;
+  color: $widget_loading_color;
+  float:right;
+}

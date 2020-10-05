@@ -1,0 +1,6 @@
+{
+    "schemaType": "NERDLET",
+    "id": "orgstatus-nerdlet",
+    "displayName": "Organization Workload Status",
+    "description": "View Organization Workload Status"
+}

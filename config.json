@@ -1,0 +1,7 @@
+{
+  "accountId":  1,
+  "configCollection": "WorkloadStatusCollection",
+  "configDocument": "WorkloadStatusConfig",
+  "newrelicBaseUrl": "https://one.newrelic.com",
+  "parentWorkloads": []
+}
